@@ -3,27 +3,91 @@
 
 
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
     <meta charset="UTF-8">
-    <title>Profile Page</title>
-    <style>
-      img {
-        width: 200px;
-        display: block;
-        margin: 20px auto;
-      }
+    <title>Aalia's Chicago Favorites</title>
 
-      * {
-      border: thin rgb(95, 17, 98) solid;
-    }
-    </style>
-  </head>
+    
+    <style>
+  /* * {
+    border: 1px rgb(82, 11, 95) dashed;
+  } */
+
+  body {
+    min-height: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: linear-gradient(360deg, #f5e1f1, #ffdcda, #f8dfc2, #dce8bf, #b5eeda, #a8eaff, #c6daff, #f4c7ff);
+    font-family: "Times New Roman";
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .avatar-image {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    border-radius: 128px;
+  }
+
+  .thumbnail {
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    object-fit: cover;
+  }
+
+  .main-container {
+  width: 640px;
+  margin: auto;
+}
+
+
+.image-row {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.name-row {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.social-icons-row {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 1000px;
+  padding: 5px;
+  padding-right: 53px;
+}
+
+.link-text {
+  text-align: center;
+  flex-grow: 1;
+  text-decoration: none;
+  color: white;
+}
+
+  .item {
+    background-color: rgba(79, 53, 100, 0.78);
+  }
+</style>
+
 
   </head>
 
   <body>
   <div class="main-container">
     <div class="image-row">
-      <img src="IMG_8226.jpg" alt="Aalia Sait headshot">
+      <img src="IMG_8226.jpg" alt="Aalia Sait headshot" class="avatar-image">
     </div>
 
     <div class="name-row">
@@ -32,38 +96,35 @@
 
     <div class="social-icons-row">
       <a href="https://www.linkedin.com/in/aalia-sait-a0667822b/" target="_blank">
-        linkedin
+        <i class="fa-brands fa-linkedin"></i> 
        </a>
 
       <a href="https://github.com/aaliasait12" target="_blank">
-        GitHub
+        <i class="fa-brands fa-github"></i> 
       </a>
       
     </div>
 
-    <div class="links-row">
-      <div class="item">
-        <img src="freestocks-VFrcRtEQKL8-unsplash.jpg">
+    <div class="item">
+        <img src="freestocks-VFrcRtEQKL8-unsplash.jpg" class="thumbnail">
 
-        <a target="_blank" href="https://www.choosechicago.com/things-to-do/shopping/">
+        <a class="link-text" target="_blank" href="https://www.choosechicago.com/things-to-do/shopping/">
           Shopping in Chicago
         </a>
       </div>
 
-      <div class="links-row">
       <div class="item">
-        <img src="sawyer-bengtson-tnv84LOjes4-unsplash.jpg">
+        <img src="sawyer-bengtson-tnv84LOjes4-unsplash.jpg" class="thumbnail">
 
-        <a target="_blank" href="https://www.choosechicago.com/things-to-do/">
+        <a class="link-text" target="_blank" href="https://www.choosechicago.com/things-to-do/">
           Activities in Chicago
         </a>
       </div>
 
-      <div class="links-row">
       <div class="item">
-        <img src="kyle-desantis-j9ZdYt3mJmU-unsplash.jpg">
+        <img src="kyle-desantis-j9ZdYt3mJmU-unsplash.jpg" class="thumbnail">
 
-        <a target="_blank" href="https://www.choosechicago.com/things-to-do/chicago-sports/">
+        <a class="link-text" target="_blank" href="https://www.choosechicago.com/things-to-do/chicago-sports/">
           Sports in Chicago
         </a>
       </div>
